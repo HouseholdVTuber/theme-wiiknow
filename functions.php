@@ -31,6 +31,7 @@ add_action('wp_enqueue_scripts', 'loadjs');
 
 
 add_theme_support('menus');
+add_theme_support('widgets');
 
 register_nav_menus(
     array(
@@ -43,6 +44,27 @@ add_theme_support('post-thumbnails');
 
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
+//register sidebars
+function my_sidebars(){
+    register_sidebar(
+        array(
+            'name' => 'Page Sidebar',
+            'id' => 'page-sidebar',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name' => 'Blog Sidebar',
+            'id' => 'blog-sidebar',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+    );
+}
+add_action('widgets_init','my_sidebars');
 
 if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
     // file does not exist... return an error.
