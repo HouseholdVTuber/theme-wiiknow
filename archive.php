@@ -2,12 +2,7 @@
 
 <div class="container pt-5 pb-5">
     <section class="row">
-        <div class="col-lg-3">
-        
-            <?php if(is_active_sidebar('page-sidebar') ):?>
-                <?php dynamic_sidebar('page-sidebar');?>
-            <?php endif;?>
-        </div>
+
         <div class="col-lg-9">
             <h1><?php single_cat_title();?></h1>
 
@@ -23,6 +18,11 @@
                     </div>
                 </div>
             <?php endwhile; endif;?>
+        </div>
+        <div class="col-lg-3">
+            <?php if(is_active_sidebar('page-sidebar') ):?>
+                <?php get_sidebar('page');?>
+            <?php endif;?>
         </div>
     <section class="row">
 </div>
