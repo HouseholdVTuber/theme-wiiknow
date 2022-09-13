@@ -34,9 +34,26 @@ header h2{
     margin-top: 20px;
 }
 
+li{
+  list-style: none;
+}
+
+.navbar-toggler-icon{
+  background-color: #d4c2fc !important;
+}
+
+.wp-block-search__label{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #28262c;
+}
+
 @media screen and (max-width: 782px){
     body{
         padding-top: 7px;
+    }
+    .container.pt-5.pb-5{
+      padding-top: 1px !important;
     }
 }
 
