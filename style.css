@@ -5,7 +5,7 @@ Author: HouseholdVTuber
 
 body{
     background: rgb(249, 245, 255);
-    padding-top: 24px;
+    padding-top: 58px;
 }
 .navbar{
     background: #D4C2FC !important;
@@ -50,7 +50,7 @@ li{
 
 @media screen and (max-width: 782px){
     body{
-        padding-top: 7px;
+        padding-top: 53px;
     }
     .container.pt-5.pb-5{
       padding-top: 1px !important;
