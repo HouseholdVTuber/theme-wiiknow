@@ -25,8 +25,8 @@
             )
         );?> 
     </nav>
-    <h2><?php
+    <h1><?php
         bloginfo('name');
-    ?></h2>
+    ?></h1>
 
 </header>

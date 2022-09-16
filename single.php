@@ -1,9 +1,9 @@
 <?php get_header();?>
 
-<div class="container pt-5 pb-5">
+<div class="container pt-3 pb-5 pr-1 pl-1">
     <section class="row">
         
-        <div class="col-lg-9 col-md-8 order-last order-md-first order-lg-first pr-4">    
+        <div class="col-lg-9 col-md-8 order-last order-md-first order-lg-first pl-4 pr-2">    
             <h1><?php the_title();?></h1>
 
             <?php if(has_post_thumbnail()):?>
@@ -20,6 +20,9 @@
                 <?php get_sidebar('page');?>
             <?php endif;?>
         </div>
+    </section>
+    <section class="row">
+        <?php comment_form();?>
     </section>
 </div>
 

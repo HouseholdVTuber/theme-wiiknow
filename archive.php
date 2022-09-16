@@ -1,10 +1,9 @@
 <?php get_header();?>
 
-<div class="container pt-4 pb-5">
+<div class="container pt-3 pb-5 pr-1 pl-1">
     <section class="row">
-
-        <div class="col-lg-9 col-md-8 order-last order-md-first order-lg-first pr-4">
-            <h1><?php single_cat_title();?></h1>
+        <div class="col-lg-9 col-md-8 order-last order-md-first order-lg-first pl-4 pr-2">
+            <h3 class="category-label"><?php single_cat_title();?></h3>
 
             <?php if (have_posts()) : while(have_posts()) : the_post();?>
                 <div class="card mb-4">

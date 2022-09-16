@@ -1,15 +1,10 @@
 /*
-Theme Name: WiiKnow
-Author: HouseholdVTuber
+    Theme: WiiKnow
+    Author: HouseholdVTuber
 */
 
 body{
     background: rgb(249, 245, 255);
-    padding-top: 26px;
-}
-.navbar{
-    background: #D4C2FC !important;
-    border-bottom: 2px solid #28262C !important;
 }
 
 header{
@@ -21,6 +16,9 @@ header{
     padding: 8px;
 }
 
+header h1{
+    margin-top: 15px;
+}
 header span{
   font: bold 16px arial, sans-serif;
   background-color: #565656 !important;
@@ -30,25 +28,53 @@ header span{
           background-clip: text;
 }
 
-header h2{
-    margin-top: 20px;
-}
-
 li{
   list-style: none;
 }
 
+/*WP Classes*/
+.widget-title{
+  margin-left: 20px;
+}
+.widget_search{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.wp-block-search__label{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.7em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*Bootstrap Classes*/
+.navbar{
+    background: #D4C2FC !important;
+    border-bottom: 2px solid #28262C !important;
+}
 .navbar-toggler-icon{
   background-color: #d4c2fc !important;
 }
-
-.wp-block-search__label{
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #28262c;
+.btn{
+  background-color: #B23A48;
+  border-color: #B23A48;
+ 
+}
+.btn:hover{
+  background-color: #67222a;
+  border-color: #67222a;
+}
+.col-lg-3{
+  margin-left: 12px;
 }
 
-@media screen and (max-width: 782px){
+/*Custom Classes*/
+.category-label{
+    margin-left: 20px;
+}
+
+/*media queries*/
+@media screen and (max-width: 768px){
     body{
         padding-top: 7px;
     }
@@ -57,3 +83,25 @@ li{
     }
 }
 
+@media screen and (min-width: 768px){
+  body{
+    padding-top: 12px;
+  }
+  .wp-block-search__label{
+    text-align: center;
+  }
+  .widget-title{
+    text-align: center;
+  }
+
+  .col-lg-3{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 782px){
+  body{
+    padding-top: 26px;
+  }
+}
