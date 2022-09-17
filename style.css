@@ -76,7 +76,7 @@ li{
 /*media queries*/
 @media screen and (max-width: 768px){
     body{
-        padding-top: 7px;
+        padding-top: 53px;
     }
     .container.pt-5.pb-5{
       padding-top: 1px !important;
@@ -102,6 +102,6 @@ li{
 
 @media screen and (min-width: 782px){
   body{
-    padding-top: 26px;
+    padding-top: 58px;
   }
 }
